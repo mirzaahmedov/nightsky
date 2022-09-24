@@ -8,3 +8,115 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Orbitron";
+  color: white;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#canvas {
+  display: block;
+  background-image: linear-gradient(to bottom, #00000e, #020002);
+}
+
+.dialog {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dialog__group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dialog__label {
+  color: #04acaf;
+}
+.range {
+  appearance: none;
+  width: 300px;
+  height: 2px;
+  border: 1px solid #04acaf;
+  background-color: transparent;
+  box-shadow: 0 0 10px #04acaf;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.button {
+  appearance: none;
+  padding: 10px;
+  color: white;
+  background-color: #04acaf;
+  box-shadow: 0 0 10px #04acaf;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal__container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  padding: 20px;
+  padding-top: 40px;
+  border: 2px solid #04acaf;
+  box-shadow: 0 0 10px #04acaf;
+  transform: translate(-50%, -50%);
+}
+.modal__title {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 5px;
+  padding-right: 20px;
+  color: white;
+  background-color: #04acaf;
+  box-shadow: 0 0 10px #04acaf;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+.modal__content {
+  padding: 20px 0;
+}
+.modal__actions {
+  display: flex;
+  gap: 20px;
+}
+.modal__action {
+  appearance: none;
+  padding: 10px 20px;
+  color: #04acaf;
+  background: none;
+  border: 2px solid #04acaf;
+  cursor: pointer;
+}
+.modal__action:hover {
+  box-shadow: 0 0 10px #04acaf;
+}
+.modal__action:active {
+  color: white;
+  background: #04acaf;
+}
+
+.textfield {
+  appearance: none;
+  background: none;
+  outline: none;
+  padding: 10px;
+  font-size: 2rem;
+  color: #04acaf;
+  border: 2px solid #04acaf;
+  box-shadow: 0 0 10px #04acaf;
+}
